@@ -1,0 +1,53 @@
+{
+  "name": "eslint-config-manpacker",
+  "version": "1.5.1",
+  "description": "Manpacker Javascirpt eslint style config standard code style",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manpackers/front-build.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manpackers/front-build/issues"
+  },
+  "homepage": "https://github.com/manpackers/front-build.git",
+  "scripts": {
+    "lint": "eslint ./test --config=index.js",
+    "test": "npm run lint && tape test/*.js"
+  },
+  "keywords": [
+    "standard",
+    "eslint",
+    "manpacker",
+    "eslintconfig",
+    "standard style",
+    "code style",
+    "check"
+  ],
+  "author": {
+    "name": "winterfete"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "tape": "^4.10.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "deepmerge": "^4.2.2",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "prettier": "^2.2.1"
+  }
+}
