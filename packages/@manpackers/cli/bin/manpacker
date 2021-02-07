@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+'use strict'
+const { version } = require('../package.json')
+const Commander = require('../lib/commander')
+const commander = new Commander({ version })
+
+commander.create()
+commander.parse()

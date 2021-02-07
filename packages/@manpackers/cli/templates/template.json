@@ -1,0 +1,23 @@
+{
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{name}} is {{version}}",
+  "manpacker": {
+    "injectStyle": ["./common/sass/index.scss"]
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "{{author}}"
+  },
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 5.0.0"
+  }
+}

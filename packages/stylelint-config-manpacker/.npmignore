@@ -1,0 +1,11 @@
+.DS_Store
+.meipianic
+.vscode
+.travis.yml
+view
+dist
+node_modules
+package-lock.json
+template.html
+test
+__test__

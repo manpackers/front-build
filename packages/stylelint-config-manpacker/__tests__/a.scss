@@ -1,0 +1,40 @@
+.a {
+  background-color: #fff;
+  display: block;
+  font-size: 12px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.bss {
+  background-color: #ffff;
+  border: 1px; /*no*/
+  display: block;
+  font-size: 12px;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+  white-space: nowrap;
+  width: 100PX;
+
+  &::before {
+    content: '';
+  }
+  &::after {
+    border: 0.5px;
+    content: '';
+  }
+  &.ab {
+    border: 1px solid #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-size-adjust: none;
+    padding: 0 10px;
+    span {
+      font-size: 18px;
+      b {
+        font-weight: 500;
+      }
+    }
+  }
+}

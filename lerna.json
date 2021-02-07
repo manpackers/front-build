@@ -1,0 +1,12 @@
+{
+  "version": "1.10.0",
+  "packages": ["packages/*", "packages/@manpackers/*"],
+  "command": {
+    "publish": {
+      "registry": "https://registry.npmjs.org"
+    },
+    "bootstrap": {}
+  },
+  "npmClient": "npm",
+  "ignoreChanges": ["**/__test__/**"]
+}

@@ -1,0 +1,11 @@
+.gitignore
+.editorconfig
+.travis.yml
+.DS_Store
+.vscode
+.elsintrc.js
+.babelrc.js
+node_modules
+package-lock.json
+jscofing.json
+test
