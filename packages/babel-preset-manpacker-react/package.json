@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-manpacker-react",
-  "version": "1.0.1",
+  "version": "1.10.0",
   "description": "Manpacker babel presets react",
   "main": "index.js",
   "scripts": {
@@ -35,12 +35,12 @@
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "eslint": "^7.19.0",
-    "eslint-config-manpacker-react": "^1.4.4"
+    "eslint-config-manpacker-react": "^1.10.0"
   },
   "dependencies": {
     "@babel/preset-react": "^7.12.13",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
-    "babel-preset-manpacker": "^1.1.1",
+    "babel-preset-manpacker": "^1.10.0",
     "deepmerge": "^4.2.2"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-manpacker-vue",
-  "version": "1.2.0",
+  "version": "1.10.0",
   "description": "Vue project eslint code style",
   "main": "index.js",
   "directories": {
@@ -38,7 +38,7 @@
     "vue-class-component": "^7.2.6"
   },
   "dependencies": {
-    "eslint-config-manpacker": "^1.6.1",
+    "eslint-config-manpacker": "^1.10.0",
     "eslint-plugin-prettier-vue": "^2.1.1",
     "eslint-plugin-vue": "^7.5.0",
     "vue-eslint-parser": "^7.4.1"

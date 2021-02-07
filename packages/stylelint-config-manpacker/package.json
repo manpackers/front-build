@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-manpacker",
-  "version": "1.0.0",
+  "version": "1.10.0",
   "description": "css 样式规则检测器",
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "eslint": "^7.19.0",
-    "eslint-config-manpacker": "^1.6.1",
+    "eslint-config-manpacker": "^1.10.0",
     "stylelint": "^13.9.0"
   },
   "dependencies": {

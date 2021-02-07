@@ -1,6 +1,9 @@
 {
   "version": "1.10.0",
-  "packages": ["packages/*", "packages/@manpackers/*"],
+  "packages": [
+    "packages/*",
+    "packages/@manpackers/*"
+  ],
   "command": {
     "publish": {
       "registry": "https://registry.npmjs.org"
@@ -8,5 +11,7 @@
     "bootstrap": {}
   },
   "npmClient": "npm",
-  "ignoreChanges": ["**/__test__/**"]
+  "ignoreChanges": [
+    "**/__test__/**"
+  ]
 }

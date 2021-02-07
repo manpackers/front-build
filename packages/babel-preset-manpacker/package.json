@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-manpacker",
-  "version": "1.1.1",
+  "version": "1.10.0",
   "description": "Manpacker babel presets core encapsulation",
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "eslint": "^7.19.0",
-    "eslint-config-manpacker": "^1.6.1"
+    "eslint-config-manpacker": "^1.10.0"
   },
   "dependencies": {
     "@babel/core": "^7.12.13",

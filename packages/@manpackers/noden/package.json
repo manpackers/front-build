@@ -1,6 +1,6 @@
 {
   "name": "@manpacker/noden",
-  "version": "1.4.0",
+  "version": "1.10.0",
   "description": "Node project generator build project",
   "main": "./lib",
   "bin": {
@@ -43,9 +43,9 @@
     ]
   },
   "devDependencies": {
-    "babel-preset-manpacker": "^1.1.1",
+    "babel-preset-manpacker": "^1.10.0",
     "eslint": "^7.19.0",
-    "eslint-config-manpacker-typescript": "^1.2.0",
+    "eslint-config-manpacker-typescript": "^1.10.0",
     "koa": "^2.13.1",
     "typescript": "^4.1.3"
   },

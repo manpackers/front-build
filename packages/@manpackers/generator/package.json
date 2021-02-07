@@ -1,6 +1,6 @@
 {
   "name": "@manpacker/generator",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "Frontend generator build project",
   "main": "./lib",
   "bin": {
@@ -43,9 +43,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "babel-preset-manpacker": "^1.1.1",
+    "babel-preset-manpacker": "^1.10.0",
     "eslint": "^7.19.0",
-    "eslint-config-manpacker": "^1.6.1",
+    "eslint-config-manpacker": "^1.10.0",
     "ts-loader": "^5.4.5",
     "typescript": "^3.5.1"
   },
