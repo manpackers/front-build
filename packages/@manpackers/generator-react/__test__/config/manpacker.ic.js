@@ -1,5 +1,5 @@
 module.exports = {
-  root: './test/src',
+  root: './__test__/src',
   injectStyle: ['./style/index.scss'],
   isCssExtract: false,
   isCssModule: false,

@@ -6,11 +6,11 @@ module.exports = {
   plugins: ['react'],
   extends: ['manpacker'],
   settings: {
-    react: { version: 'detect' }
+    react: { version: '999.999.999' /* 'detect' */ }
   },
   rules: {
     'react/jsx-uses-vars': 'error',
-    'react/jsx-curly-spacing': ['error', { 'when': 'never', 'children': true }],
+    'react/jsx-curly-spacing': ['error', { when: 'never', children: true }],
     'react/prefer-es6-class': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/self-closing-comp': 'warn',
@@ -20,49 +20,48 @@ module.exports = {
     'no-mixed-spaces-and-tabs': 'warn',
     'jsx-quotes': ['error', 'prefer-double'],
     'react/jsx-key': 'error',
-    'react/jsx-max-props-per-line': ['error', { 'maximum': 1 }],
+    // 去掉props最大值
+    // 'react/jsx-max-props-per-line': ['error', { 'maximum': 1 }],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'warn',
     'react/no-unknown-property': 'error',
     'react/jsx-closing-bracket-location': 'off',
     'react/no-multi-comp': 'error',
-    'react/sort-comp': [1, {
-      'order': [
-        'init',
-        'everything-else',
-        'lifecycles',
-        'render'
-      ],
-      'groups': {
-        'init': [
-          'displayName',
-          'propTypes',
-          'contextTypes',
-          'childContextTypes',
-          'mixins',
-          'statics',
-          'defaultProps',
-          'getDefaultProps',
-          'getInitialState',
-          'state',
-          'getChildContext',
-          'constructor'
-        ],
-        'lifecycles': [
-          'componentWillMount',
-          'componentDidMount',
-          'componentWillReceiveProps',
-          'shouldComponentUpdate',
-          'componentWillUpdate',
-          'componentDidUpdate',
-          'componentDidCatch',
-          'componentWillUnmount'
-        ]
+    'react/sort-comp': [
+      1,
+      {
+        order: ['init', 'everything-else', 'lifecycles', 'render'],
+        groups: {
+          init: [
+            'displayName',
+            'propTypes',
+            'contextTypes',
+            'childContextTypes',
+            'mixins',
+            'statics',
+            'defaultProps',
+            'getDefaultProps',
+            'getInitialState',
+            'state',
+            'getChildContext',
+            'constructor'
+          ],
+          lifecycles: [
+            'componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'componentDidUpdate',
+            'componentDidCatch',
+            'componentWillUnmount'
+          ]
+        }
       }
-    }],
+    ],
     'react/no-find-dom-node': 'warn',
-    'react/jsx-max-depth': ['warn', { 'max': 3 }],
+    // 'react/jsx-max-depth': ['warn', { max: 3 }],
     'react/no-this-in-sfc': 'error',
     'react/sort-prop-types': 'warn',
     'react/static-property-placement': 'error',

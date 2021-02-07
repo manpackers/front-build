@@ -4,7 +4,7 @@
   "description": "Manpacker Javascirpt eslint style config standard code style",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "__test__"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "deepmerge": "^4.2.2",
     "eslint": "^7.19.0",
-    "tape": "^4.10.1"
+    "tape": "^5.1.1"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"

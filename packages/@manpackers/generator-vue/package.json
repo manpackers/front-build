@@ -6,8 +6,8 @@
     "manpacker-vue": "./bin/manpacker-vue"
   },
   "scripts": {
-    "test:server": "node ./bin/manpacker-vue server --ic ./test/config/manpacker.ic.js --config ./test/manpacker.webpack.js",
-    "test:build": "node ./bin/manpacker-vue build --ic ./test/config/manpacker.ic.js --config ./test/manpacker.webpack.js"
+    "test:server": "node ./bin/manpacker-vue server --ic ./__test__/config/manpacker.ic.js --config ./__test__/manpacker.webpack.js",
+    "test:build": "node ./bin/manpacker-vue build --ic ./__test__/config/manpacker.ic.js --config ./__test__/manpacker.webpack.js"
   },
   "repository": {
     "type": "git",
@@ -28,22 +28,6 @@
     "url": "https://github.com/manpackers/front-build/issues"
   },
   "homepage": "https://github.com/manpackers/front-build#readme",
-  "dependencies": {
-    "@manpacker/generator": "^1.8.0",
-    "vue": "^2.6.10",
-    "vue-class-component": "^7.1.0",
-    "vue-loader": "^14.2.4",
-    "vue-template-compiler": "^2.6.10"
-  },
-  "devDependencies": {
-    "babel-preset-manpacker": "^1.1.1",
-    "eslint": "^5.16.0",
-    "eslint-config-manpacker-typescript": "^1.2.0",
-    "eslint-config-manpacker-vue": "^1.2.0",
-    "eslint-loader": "^2.1.2",
-    "ts-loader": "^6.0.0",
-    "typescript": "^3.4.5"
-  },
   "babel": {
     "presets": [
       "manpacker"
@@ -54,5 +38,21 @@
       "manpacker-typescript",
       "manpacker-vue"
     ]
+  },
+  "dependencies": {
+    "@manpacker/generator": "^1.8.0",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.1.0",
+    "vue-loader": "^14.2.4",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "babel-preset-manpacker": "^1.1.1",
+    "eslint": "^7.19.0",
+    "eslint-config-manpacker-typescript": "^1.2.0",
+    "eslint-config-manpacker-vue": "^1.2.0",
+    "eslint-loader": "^2.1.2",
+    "ts-loader": "^6.0.0",
+    "typescript": "^3.4.5"
   }
 }

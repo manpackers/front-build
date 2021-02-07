@@ -4,7 +4,7 @@
   "description": "Manpacker babel presets core encapsulation",
   "main": "index.js",
   "scripts": {
-    "babel": "npx babel ./test --out-dir dist"
+    "test": "npx babel ./__test__ --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -27,23 +27,25 @@
   "license": "MIT",
   "eslintConfig": {
     "extends": [
-      "manpacker"
+      "manpacker",
+      "manpacker/prettier",
+      "manpacker/npm"
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.3",
-    "eslint": "^5.16.0",
-    "eslint-config-manpacker": "^1.1.1"
+    "@babel/cli": "^7.12.13",
+    "eslint": "^7.19.0",
+    "eslint-config-manpacker": "^1.6.1"
   },
   "dependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-proposal-decorators": "^7.4.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/polyfill": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "babel-plugin-dynamic-import-node": "^2.2.0",
-    "core-js": "^3.0.1",
-    "deepmerge": "^3.2.0"
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-proposal-decorators": "^7.12.13",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.13",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "core-js": "^3.8.3",
+    "deepmerge": "^4.2.2"
   }
 }

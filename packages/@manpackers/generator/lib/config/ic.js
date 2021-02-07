@@ -1,6 +1,10 @@
 /**
  * Ic init config item options
  */
+const path = require('path')
+const packageJson = require(path.resolve(path.join(process.cwd(), './package.json')))
+const { eslintConfig, stylelint } = packageJson
+
 module.exports = {
   root: 'src',
   output: 'view',
@@ -18,8 +22,13 @@ module.exports = {
   template: 'template.html',
   port: 8090,
   proxy: {},
-  isEslint: true,
   isCssExtract: false,
   map: '',
+  isZip: false,
+  isEslint: !!eslintConfig,
+  isEslintFix: false,
+  isStylelint: !!stylelint,
+  isStyletlintFix: false,
+  isCssExtract: false,
   isZip: false
 }

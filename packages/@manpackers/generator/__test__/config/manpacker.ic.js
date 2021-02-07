@@ -1,11 +1,11 @@
 module.exports = {
-  root: './test/src',
+  root: './__test__/src',
   injectStyle: ['./style/index.scss'],
   isCssExtract: true,
   isCssModule: false,
   isMergeCommon: true,
   isEslint: false,
-  template: './test/template.html',
+  template: './__test__/template.html',
   isZip: true,
 
   port: 10001,

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/manpackers/front-build#readme",
   "devDependencies": {
+    "eslint-config-manpacker": "^1.6.1",
     "lerna": "^3.22.1"
   }
 }

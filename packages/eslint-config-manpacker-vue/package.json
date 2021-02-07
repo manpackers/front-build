@@ -4,10 +4,10 @@
   "description": "Vue project eslint code style",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "__test__"
   },
   "scripts": {
-    "lint": "eslint ./test --config=index.js",
+    "lint": "eslint ./__test__ --config=index.js",
     "test": "npm run lint"
   },
   "repository": {
@@ -31,14 +31,16 @@
     "url": "https://github.com/manpackers/front-build/issues"
   },
   "homepage": "https://github.com/manpackers/front-build#readme",
-  "dependencies": {
-    "eslint-config-manpacker": "^1.5.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "vue-eslint-parser": "^6.0.4"
-  },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "tape": "^4.10.1",
-    "vue-class-component": "^7.1.0"
+    "deepmerge": "^4.2.2",
+    "eslint": "^7.19.0",
+    "tape": "^5.1.1",
+    "vue-class-component": "^7.2.6"
+  },
+  "dependencies": {
+    "eslint-config-manpacker": "^1.6.1",
+    "eslint-plugin-prettier-vue": "^2.1.1",
+    "eslint-plugin-vue": "^7.5.0",
+    "vue-eslint-parser": "^7.4.1"
   }
 }

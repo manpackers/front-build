@@ -29,15 +29,17 @@
       "manpacker/npm"
     ]
   },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-manpacker": "^1.6.1",
+    "stylelint": "^13.9.0"
+  },
   "dependencies": {
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recess-order": "^2.3.0",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-order": "^4.1.0"
-  },
-  "devDependencies": {
-    "stylelint": "^13.9.0"
   }
 }

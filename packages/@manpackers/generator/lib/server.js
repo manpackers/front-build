@@ -4,29 +4,26 @@ const merge = require('webpack-merge')
 const WebpackDevServer = require('webpack-dev-server')
 const { ip } = require('../utils/system')
 
-module.exports = async(ic, config) => {
-  let { devRouter, proxy, port, ext } = ic
-  let webpackConfig = merge.smart({
-    output: {
-      filename: 'js/[name].[hash:13].js',
-      chunkFilename: 'js/[name].[chunkhash:13].js',
-      publicPath: devRouter ? (
-        devRouter === '/' ? devRouter : `${devRouter}/`
-      ) : '/'
+module.exports = async (ic, config) => {
+  const { devRouter, proxy, port, ext } = ic
+  const webpackConfig = merge.smart(
+    {
+      output: {
+        filename: 'js/[name].[hash:13].js',
+        chunkFilename: 'js/[name].[chunkhash:13].js',
+        publicPath: devRouter ? (devRouter === '/' ? devRouter : `${devRouter}/`) : '/'
+      },
+
+      devtool: 'cheap-module-eval-source-map',
+
+      plugins: [new webpack.HotModuleReplacementPlugin()]
     },
-
-    devtool: 'cheap-module-eval-source-map',
-
-    plugins: [
-      new webpack.HotModuleReplacementPlugin()
-    ]
-  }, config)
-  let host = '0.0.0.0'
-  let devServerOptions = {
+    config
+  )
+  const host = '0.0.0.0'
+  const devServerOptions = {
     clientLogLevel: 'warning',
-    historyApiFallback: devRouter ? {
-      index: devRouter
-    } : true,
+    historyApiFallback: devRouter ? { index: devRouter } : true,
     hot: true,
     contentBase: false,
     compress: false,
@@ -44,19 +41,15 @@ module.exports = async(ic, config) => {
   }
 
   if (devRouter) {
-    console.log(chalk.yellow([
-      `  Access url: http://${ip}:${port}${devRouter}`
-    ].join('\n') + '\n'))
+    // eslint-disable-next-line no-console
+    console.log(chalk.yellow([`  Access url: http://${ip}:${port}${devRouter}`].join('\n') + '\n'))
   } else {
-    Object.keys(webpackConfig.entry).map(value => {
-      console.log(chalk.yellow([
-        `  Access url: http://${ip}:${port}/${value}.${ext}`
-      ].join('\n') + '\n'))
+    Object.keys(webpackConfig.entry).forEach(value => {
+      // eslint-disable-next-line no-console
+      console.log(chalk.yellow([`  Access url: http://${ip}:${port}/${value}.${ext}`].join('\n') + '\n'))
     })
   }
-
   WebpackDevServer.addDevServerEntrypoints(webpackConfig, devServerOptions)
 
-  return await new WebpackDevServer((() => webpack(webpackConfig))(), devServerOptions)
-    .listen(ic.port, host)
+  return await new WebpackDevServer((() => webpack(webpackConfig))(), devServerOptions).listen(ic.port, host)
 }

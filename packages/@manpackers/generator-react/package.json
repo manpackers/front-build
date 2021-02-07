@@ -6,8 +6,8 @@
     "manpacker-react": "./bin/manpacker-react"
   },
   "scripts": {
-    "test:server": "node ./bin/manpacker-react server --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js",
-    "test:build": "node ./bin/manpacker-react build --ic ./test/config/manpacker.ic.js --config ./test/manpacker.config.js"
+    "test:server": "node ./bin/manpacker-react server --ic ./__test__/config/manpacker.ic.js --config ./__test__/manpacker.config.js",
+    "test:build": "node ./bin/manpacker-react build --ic ./__test__/config/manpacker.ic.js --config ./__test__/manpacker.config.js"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,8 @@
   "eslintConfig": {
     "extends": [
       "manpacker-typescript",
-      "manpacker-react"
+      "manpacker-react",
+      "maipacker-react/prettier"
     ]
   },
   "dependencies": {
@@ -46,7 +47,7 @@
   },
   "devDependencies": {
     "babel-preset-manpacker-react": "^1.0.1",
-    "eslint": "^5.16.0",
+    "eslint": "^7.19.0",
     "eslint-config-manpacker-react": "^1.1.1",
     "eslint-config-manpacker-typescript": "^1.2.0",
     "eslint-loader": "^2.1.2",

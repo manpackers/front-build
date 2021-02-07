@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = () => ({
   // output: {
   // library: 'Test'
@@ -7,10 +5,12 @@ module.exports = () => ({
   // },
 
   module: {
-    rules: [{
-      test: /\.tsx?$/,
-      exclude: /node_modules/,
-      use: { loader: 'ts-loader' }
-    }]
+    rules: [
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: { loader: 'ts-loader' }
+      }
+    ]
   }
 })

@@ -15,7 +15,7 @@
   "homepage": "https://github.com/manpackers/front-build#readme",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./test --config=index.js"
+    "lint": "eslint ./__test__ --config=index.js"
   },
   "keywords": [
     "standard",
@@ -35,13 +35,14 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "typescript": "^3.4.5"
+    "deepmerge": "^4.2.2",
+    "eslint": "^7.19.0",
+    "typescript": "^4.1.3"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/parser": "^1.7.0",
-    "eslint-config-manpacker": "^1.4.0",
-    "eslint-config-typescript": "^2.0.0"
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint-config-manpacker": "^1.6.1",
+    "eslint-config-typescript": "^3.0.0"
   }
 }

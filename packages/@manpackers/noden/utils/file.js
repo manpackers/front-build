@@ -37,14 +37,16 @@ function exec(name) {
  * @returns {Array}
  */
 function search(catalog, ext) {
-  let catalogAndFiles = fs.readdirSync(catalog)
-  let files = []
-  let extFiles = []
+  const catalogAndFiles = fs.readdirSync(catalog)
+  const files = []
+  const extFiles = []
 
   catalogAndFiles.map(value => {
     return (
       fs.statSync(path.resolve(catalog, value)).isFile()
-    ) ? files.push(value) : ''
+    )
+      ? files.push(value)
+      : ''
   })
 
   // Ext name for file.

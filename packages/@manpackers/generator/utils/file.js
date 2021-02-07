@@ -11,11 +11,17 @@ const zipper = require('zip-local')
 function parse(name) {
   let target = {}
 
-  if (!name) { return target }
+  if (!name) {
+    return target
+  }
   try {
     target = require(path.resolve(name))
-    if (target && (typeof target !== 'object')) { return target }
-  } catch (err) { /** TODO */ }
+    if (target && typeof target !== 'object') {
+      return target
+    }
+  } catch (err) {
+    /** TODO */
+  }
   return target
 }
 
@@ -23,11 +29,17 @@ function parse(name) {
 function exec(name) {
   let target = () => {}
 
-  if (!name) { return target }
+  if (!name) {
+    return target
+  }
   try {
     target = require(path.resolve(name))
-    if (target && (typeof target !== 'function')) { return target }
-  } catch (err) { /** TODO */ }
+    if (target && typeof target !== 'function') {
+      return target
+    }
+  } catch (err) {
+    /** TODO */
+  }
   return target
 }
 
@@ -38,20 +50,20 @@ function exec(name) {
  * @returns {Array}
  */
 function search(catalog, ext) {
-  let catalogAndFiles = fs.readdirSync(catalog)
-  let files = []
-  let extFiles = []
+  const catalogAndFiles = fs.readdirSync(catalog)
+  const files = []
+  const extFiles = []
 
   catalogAndFiles.map(value => {
-    return (
-      fs.statSync(path.resolve(catalog, value)).isFile()
-    ) ? files.push(value) : ''
+    return fs.statSync(path.resolve(catalog, value)).isFile() ? files.push(value) : ''
   })
 
   // Ext name for file.
-  if (!ext) { return files }
+  if (!ext) {
+    return files
+  }
   files.map(value => {
-    return (ext.test(value)) ? extFiles.push(value) : ''
+    return ext.test(value) ? extFiles.push(value) : ''
   })
   return extFiles
 }
@@ -60,14 +72,14 @@ function search(catalog, ext) {
  * Remove dir
  */
 async function remove(rf) {
-  return await new Promise((resolve, reject) => rf ? rimraf(rf, () => resolve()) : reject(rf))
+  return await new Promise((resolve, reject) => (rf ? rimraf(rf, () => resolve()) : reject(rf)))
 }
 
 // Zip
 async function zip(source, name = 'native') {
-  let zipped = await new Promise((resolve, reject) => (
-    zipper.zip(path.join(source), (err, zipped) => err ? reject(err) : resolve(zipped))
-  ))
+  const zipped = await new Promise((resolve, reject) =>
+    zipper.zip(path.join(source), (err, zipped) => (err ? reject(err) : resolve(zipped)))
+  )
 
   await remove(source)
   await fs.mkdirSync(source)

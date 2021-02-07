@@ -29,7 +29,7 @@ module.exports = class {
     return await new Promise(resolve => commander.command('build')
       .option('-o, --output [path:String]', 'Specify output results directory')
       .action(options => {
-        let { output } = options
+        const { output } = options
         resolve({
           ic: merge(file.parse(commander.ic), { output }),
           config: file.exec(commander.config)
