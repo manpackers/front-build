@@ -1,11 +1,11 @@
-# `stylelint-config-meipian`
+# `stylelint-config-manpacker`
 
 > TODO: description
 
 ## Usage
 
 ```
-const stylelintConfigMeipian = require('stylelint-config-meipian');
+const stylelintConfigManpacker = require('stylelint-config-manpacker');
 
 // TODO: DEMONSTRATE API
 ```

@@ -2,8 +2,9 @@
   "name": "stylelint-config-manpacker",
   "version": "1.0.0",
   "description": "css 样式规则检测器",
-  "homepage": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -16,15 +17,17 @@
     "type": "git",
     "url": "git@github.com:manpackers/front-build.git"
   },
+  "bugs": {
+    "url": "https://github.com/manpackers/front-build/issues"
+  },
+  "homepage": "https://github.com/manpackers/front-build#readme",
+  "license": "ISC",
   "eslintConfig": {
     "extends": [
-      "meipian",
-      "meipian/prettier",
-      "meipian/npm"
+      "manpacker",
+      "manpacker/prettier",
+      "manpacker/npm"
     ]
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
     "prettier": "^2.1.2",

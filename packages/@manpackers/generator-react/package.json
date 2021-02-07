@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manpackers/generator-react.git"
+    "url": "git@github.com:manpackers/front-build.git"
   },
   "keywords": [
     "react",
@@ -25,9 +25,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/manpackers/generator-react/issues"
+    "url": "https://github.com/manpackers/front-build/issues"
   },
-  "homepage": "https://github.com/manpackers/generator-react#readme",
+  "homepage": "https://github.com/manpackers/front-build#readme",
   "babel": {
     "presets": [
       "manpacker-react"

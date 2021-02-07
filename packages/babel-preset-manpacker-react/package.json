@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manpackers/babel-preset-manpacker-react.git"
+    "url": "git@github.com:manpackers/front-build.git"
   },
   "bugs": {
-    "url": "https://github.com/manpackers/babel-preset-manpacker-react/issues"
+    "url": "https://github.com/manpackers/front-build/issues"
   },
-  "homepage": "https://github.com/manpackers/babel-preset-manpacker-react",
+  "homepage": "https://github.com/manpackers/front-build#readme",
   "keywords": [
     "babel-core",
     "presets",

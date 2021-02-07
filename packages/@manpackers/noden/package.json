@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manpackers/noden.git"
+    "url": "git@github.com:manpackers/front-build.git"
   },
   "keywords": [
     "noden",
@@ -28,9 +28,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/manpackers/noden/issues"
+    "url": "https://github.com/manpackers/front-build/issues"
   },
-  "homepage": "https://github.com/manpackers/noden#readme",
+  "homepage": "https://github.com/manpackers/front-build#readme",
   "eslintConfig": {
     "extends": [
       "manpacker-typescript"
